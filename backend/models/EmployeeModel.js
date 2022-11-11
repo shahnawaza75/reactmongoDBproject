@@ -25,9 +25,9 @@ const EmployeeSchema = new mongoose.Schema({
   },
   address: {
     type: String,
-    required: [true, "address number is required"],
-    minLength: [10, "Invalid address"],
-    maxLengthL: [10, "Invalid address"],
+    required: [true, "address is required"],
+    minLength: [10, "Invalid phone number"],
+    maxLengthL: [100, "Invalid phone number"],
   },
 });
 
